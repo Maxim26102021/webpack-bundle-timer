@@ -1,3 +1,4 @@
+import "./src/css/style.css";
 import { printOutput, printResult } from './src/js/output';
 import getDatesDiff from './src/js/getDatesDiff';
 import { initField, start} from './src/js/timer';
