@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <script src="./src/main.js" type="module"></script>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+
+<form action="#" id="chooseForm">
+    Choose module
+    <p>Dates<input checked type="radio" value="date-form" name="change"></p>
+    <p>Timer<input type="radio" value="timer-form" name="change"></p>
+</form>
+
+<form id="datecalc" class="module-form date-form">
+    <h3>Калькулятор дат</h3>
+    <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+    </label>
+    <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+    </label>
+    <button type="submit">Расчитать промежуток</button>
+    <p id="datecalc__result"></p>
+</form>
+
+<form id="timer" class="module-form timer-form hide">
+    <input type="number" id="inp" value="секунды" name="timer">
+    <input type="button" class="start" name="startBtn" value="Start">
+    <input type="reset" class="end" name="endBtn">
+    <p class="output"></p>
+</form>
+
+<button class="song">7777</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.core.min.js" integrity="sha512-+wqa4/aOL4vwhL637A4p+6epqhUHDqpEfYJa1+PlzlMf908CSOb3xtIeKwZWh5Q0Q/R2nYUKxH4vvcQg+k8KKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+
